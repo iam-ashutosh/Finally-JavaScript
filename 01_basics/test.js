@@ -1,37 +1,50 @@
-const prompt = require("prompt-sync")({sigint: true});
-//console.log('Hello, I am Ashutosh')
+//Note :- 1. A program must contain these characteristics, 
+//Highly Readable, Better future scope and easy to modify,
 
 
-/*function multiplyNumbers(a, b) {
-    return a * b;
-  }
-  
-  // Example usage
-  var number1 = 5;
-  var number2 = 8;
-  
-  var product = multiplyNumbers(number1, number2);
-  console.log("The product of", number1, "and", number2, "is:", product);*/
 
-  function multiplyNumbers(a, b) {
-    if (typeof a !== 'number' || typeof b !== 'number') {
-      throw new Error('Both arguments must be numbers');
-    }
-    
-    var result = a * b;
-    
-    if (result % 2 === 0) {
-      console.log('The product is an even number');
-    } else {
-      console.log('The product is an odd number');
-    }
-    
-    return result;
-  }
-  
-  // Example usage with user input
-  var number1 = parseInt(prompt("Enter the first number:"));
-  var number2 = parseInt(prompt("Enter the second number:"));
-  
-  var product = multiplyNumbers(number1, number2);
-  console.log("The product of", number1, "and", number2, "is:", product);
+/*const accountId = 2004 
+let accountName = "Almighty" 
+var accountPass = "12345" 
+userCity = "Fridabad" 
+let accountstate ; // undefined*/
+
+/*
+Prefer not to use var
+because of issue in block scope and functional scope
+
+[] - used to get array
+{} - used to get objects 
+
+(;) - is not compulsory to put at the EOL
+*/
+
+//console.table({accountId, accountName, accountPass, userCity, accountstate})
+//console.table([accountId, accountName, accountPass, userCity, accountstate]) 
+
+
+
+"use strict"; // treat all JS code as a newer version
+
+// always refers to the MDN reference for any query
+
+//alert = (anything); //gives error as - We are using Node js not browser, javascript engine is inside the browser.
+
+
+// Datatypes in JS (Primitive)
+// number => 2 to the power 53
+// string => ""
+// bigint => more than 53 
+// boolean => True/False
+// null => standalone value 
+// undefined => vacant
+// symbol => unique -  for designing components, plug-ins etc.
+
+//(Non-Primitive)
+// object
+// array
+
+console.log(typeof(null)); //object
+console.log(typeof(undefined)); //undefined
+
+
