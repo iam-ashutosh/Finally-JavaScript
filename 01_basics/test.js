@@ -3,6 +3,8 @@
 
 
 
+//Examples
+
 /*const accountId = 2004 
 let accountName = "Almighty" 
 var accountPass = "12345" 
